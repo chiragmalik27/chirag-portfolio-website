@@ -23,13 +23,13 @@ export function About() {
                     src="/logo-dark.png"
                     alt="White Owl Labs"
                     fill
-                    className="hidden dark:block object-contain"
+                    className="hidden dark:block dark-logo object-contain"
                   />
                   <Image
                     src="/logo-light.png"
                     alt="White Owl Labs"
                     fill
-                    className="block dark:hidden object-contain"
+                    className="block dark:hidden light-logo object-contain"
                   />
                 </div>
 

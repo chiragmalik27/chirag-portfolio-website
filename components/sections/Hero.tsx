@@ -154,14 +154,14 @@ export function Hero() {
                       alt="White Owl Labs"
                       fill
                       priority
-                      className="hidden dark:block object-contain"
+                      className="hidden dark:block dark-logo object-contain"
                     />
                     <Image
                       src="/logo-light.png"
                       alt="White Owl Labs"
                       fill
                       priority
-                      className="block dark:hidden object-contain"
+                      className="block dark:hidden light-logo object-contain"
                     />
                   </div>
 

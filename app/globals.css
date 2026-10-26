@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *, .dark, .dark *));
+
 @layer base {
+  /* Light theme as default (white mode) */
   :root {
-    --bg: #0E1117;
-    --bg-elevated: #161B27;
-    --fg: #E8ECF0;
-    --fg-muted: #7B8794;
-    --border: #232B3B;
+    --bg: #F7F8FA;
+    --bg-elevated: #FFFFFF;
+    --fg: #0D1117;
+    --fg-muted: #5C6370;
+    --border: #DDE1E9;
     --accent: #0AAFFF;
     --accent-fg: #FFFFFF;
     --success: #10B981;
@@ -18,18 +21,42 @@
     --radius-full: 9999px;
   }
 
-  :root[data-theme="light"],
-  :root.light {
-    --bg: #F7F8FA;
-    --bg-elevated: #FFFFFF;
-    --fg: #0D1117;
-    --fg-muted: #5C6370;
-    --border: #DDE1E9;
+  /* Dark theme overrides */
+  :root[data-theme="dark"],
+  :root.dark {
+    --bg: #0E1117;
+    --bg-elevated: #161B27;
+    --fg: #E8ECF0;
+    --fg-muted: #7B8794;
+    --border: #232B3B;
     --accent: #0AAFFF;
     --accent-fg: #FFFFFF;
     --success: #10B981;
     --danger: #EF4444;
   }
+}
+
+/* Explicit theme logo visibility guarantees */
+html[data-theme="dark"] .light-logo,
+html.dark .light-logo {
+  display: none !important;
+}
+
+html[data-theme="dark"] .dark-logo,
+html.dark .dark-logo {
+  display: block !important;
+}
+
+html[data-theme="light"] .dark-logo,
+html.light .dark-logo,
+:root:not(.dark):not([data-theme="dark"]) .dark-logo {
+  display: none !important;
+}
+
+html[data-theme="light"] .light-logo,
+html.light .light-logo,
+:root:not(.dark):not([data-theme="dark"]) .light-logo {
+  display: block !important;
 }
 
 @theme {

@@ -82,9 +82,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-theme="dark"
+      data-theme="light"
       suppressHydrationWarning
-      className={`${dmSans.variable} ${inter.variable} dark h-full antialiased`}
+      className={`${dmSans.variable} ${inter.variable} light h-full antialiased`}
     >
       <head>
         <Script
@@ -97,7 +97,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: siteConfig.name,
               url: "https://whiteowllabs.in",
-              logo: "https://whiteowllabs.in/logo-dark.png",
+              logo: "https://whiteowllabs.in/logo-light.png",
               description: siteConfig.positioning,
               email: siteConfig.contact.email,
               telephone: siteConfig.contact.phone,
@@ -131,14 +131,14 @@ export default function RootLayout({
               (function() {
                 try {
                   var saved = localStorage.getItem('theme');
-                  var theme = saved || 'dark';
+                  var theme = saved || 'light';
                   document.documentElement.setAttribute('data-theme', theme);
-                  if (theme === 'light') {
-                    document.documentElement.classList.remove('dark');
-                    document.documentElement.classList.add('light');
-                  } else {
+                  if (theme === 'dark') {
                     document.documentElement.classList.add('dark');
                     document.documentElement.classList.remove('light');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                    document.documentElement.classList.add('light');
                   }
                 } catch (e) {}
               })();

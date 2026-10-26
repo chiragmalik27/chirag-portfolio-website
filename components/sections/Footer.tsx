@@ -20,13 +20,13 @@ export function Footer() {
                   src="/logo-horizontal-dark.png"
                   alt="White Owl Labs"
                   fill
-                  className="hidden dark:block object-contain object-left"
+                  className="hidden dark:block dark-logo object-contain object-left"
                 />
                 <Image
                   src="/logo-horizontal-light.png"
                   alt="White Owl Labs"
                   fill
-                  className="block dark:hidden object-contain object-left"
+                  className="block dark:hidden light-logo object-contain object-left"
                 />
               </div>
             </Link>

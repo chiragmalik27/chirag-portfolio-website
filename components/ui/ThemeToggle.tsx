@@ -26,14 +26,14 @@ function subscribe(callback: () => void) {
 }
 
 function getSnapshot(): "light" | "dark" {
-  if (typeof window === "undefined") return "dark";
+  if (typeof window === "undefined") return "light";
   const saved = localStorage.getItem("theme") as "light" | "dark" | null;
   if (saved) return saved;
-  return "dark";
+  return "light";
 }
 
 function getServerSnapshot(): "light" | "dark" {
-  return "dark";
+  return "light";
 }
 
 export function ThemeToggle({ className }: { className?: string }) {
