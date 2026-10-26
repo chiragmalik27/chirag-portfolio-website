@@ -9,19 +9,19 @@
 Replace the placeholders below. If anything is still a placeholder when you start, **ask me before designing** and propose sensible options.
 
 ```yaml
-name: "[CHIRAG MALIK]"
-role: "[Full-stack developer / AI Solutions Engineer / RAG Models]"
-positioning: "[I build fast, clean websites for Business owners.]"
-target_clients: "[startups, agencies, local businesses, international freelance clients]"
-primary_cta: "Book a call"          # main action visitors should take
-secondary_cta: "View work"
+name: "White Owl Labs"
+role: "Software & AI Engineering Studio"
+positioning: "We architect mission-critical software, autonomous AI systems, and high-performance web applications for ambitious companies."
+target_clients: "High-growth startups, scaleups, enterprise teams, and digital-first businesses"
+primary_cta: "Start a Project"          # main action visitors should take
+secondary_cta: "Explore Work"
 contact:
-  email: "[chiragmalik0505@gmail.com]"
-  whatsapp: "[+919501480672]"
-  linkedin: "[https://www.linkedin.com/in/chirag-malik-a9a859265/]"
-  github: "[https://github.com/chiragmalik27]"
+  email: "hey@whiteowllabs.in"
+  phone: "+91 7877832579"
+  whatsapp: "+91 7877832579"
+  github: "https://github.com/whiteowllabs"
   
-design_direction: "[bento]"
+design_direction: "bento"
 ```
 
 ---

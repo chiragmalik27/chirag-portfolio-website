@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Mail, MessageSquare, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { Mail, MessageSquare, Phone, Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Heading } from "@/components/ui/Heading";
@@ -94,18 +94,54 @@ export function Contact() {
           <div className="lg:col-span-5 space-y-6">
             <div>
               <span className="text-xs font-semibold uppercase tracking-wider text-[var(--accent)] mb-2 block">
-                Let&apos;s Connect
+                Get in Touch
               </span>
               <Heading as="h2" size="h2" className="mb-4">
-                Ready to build something fast and clean?
+                Partner with White Owl Labs.
               </Heading>
               <p className="text-[var(--fg-muted)] text-body leading-relaxed mb-8">
-                Share a few details about your vision, timeline, or current challenges. I reply to every inquiry within 24 hours.
+                Share details about your product vision, architecture requirements, or timeline. Our engineering leads review and respond to every inquiry within 24 hours.
               </p>
             </div>
 
             {/* Direct Cards */}
             <div className="space-y-3">
+              <a
+                href={siteConfig.contact.phoneUrl}
+                className="p-5 rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--bg-elevated)] flex items-center justify-between group hover:border-[var(--accent)] transition-colors min-h-[44px]"
+              >
+                <div className="flex items-center gap-3.5">
+                  <div className="w-10 h-10 rounded-full bg-[var(--accent)]/10 text-[var(--accent)] flex items-center justify-center shrink-0">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="text-xs text-[var(--fg-muted)]">Direct Phone</div>
+                    <div className="font-semibold text-sm text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">
+                      {siteConfig.contact.phone}
+                    </div>
+                  </div>
+                </div>
+                <span className="text-xs font-medium text-[var(--accent)]">Call</span>
+              </a>
+
+              <a
+                href={`mailto:${siteConfig.contact.email}`}
+                className="p-5 rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--bg-elevated)] flex items-center justify-between group hover:border-[var(--accent)] transition-colors min-h-[44px]"
+              >
+                <div className="flex items-center gap-3.5">
+                  <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center shrink-0">
+                    <Mail className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="text-xs text-[var(--fg-muted)]">Official Email</div>
+                    <div className="font-semibold text-sm text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">
+                      {siteConfig.contact.email}
+                    </div>
+                  </div>
+                </div>
+                <span className="text-xs font-medium text-[var(--accent)]">Write</span>
+              </a>
+
               <a
                 href={siteConfig.contact.whatsappUrl}
                 target="_blank"
@@ -126,45 +162,6 @@ export function Contact() {
                 <span className="text-xs font-medium text-[var(--accent)]">Chat now</span>
               </a>
 
-              <a
-                href={`mailto:${siteConfig.contact.email}`}
-                className="p-5 rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--bg-elevated)] flex items-center justify-between group hover:border-[var(--accent)] transition-colors min-h-[44px]"
-              >
-                <div className="flex items-center gap-3.5">
-                  <div className="w-10 h-10 rounded-full bg-[var(--accent)]/10 text-[var(--accent)] flex items-center justify-center shrink-0">
-                    <Mail className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <div className="text-xs text-[var(--fg-muted)]">Direct Email</div>
-                    <div className="font-semibold text-sm text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">
-                      {siteConfig.contact.email}
-                    </div>
-                  </div>
-                </div>
-                <span className="text-xs font-medium text-[var(--accent)]">Write</span>
-              </a>
-
-              <a
-                href={siteConfig.contact.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-5 rounded-[var(--radius-sm)] border border-[var(--border)] bg-[var(--bg-elevated)] flex items-center justify-between group hover:border-[var(--accent)] transition-colors min-h-[44px]"
-              >
-                <div className="flex items-center gap-3.5">
-                  <div className="w-10 h-10 rounded-full bg-blue-500/10 text-blue-500 flex items-center justify-center shrink-0">
-                    <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="text-xs text-[var(--fg-muted)]">LinkedIn Network</div>
-                    <div className="font-semibold text-sm text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">
-                      Chirag Malik
-                    </div>
-                  </div>
-                </div>
-                <span className="text-xs font-medium text-[var(--accent)]">Connect</span>
-              </a>
             </div>
           </div>
 

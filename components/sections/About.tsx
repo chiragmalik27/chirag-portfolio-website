@@ -5,51 +5,63 @@ import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Heading } from "@/components/ui/Heading";
 import { aboutData } from "@/content/about";
-import { siteConfig } from "@/content/site";
 
 export function About() {
   return (
     <Section id="about" className="border-t border-[var(--border)]">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Left Column: Portrait & Quick Stats */}
+          {/* Left Column: Studio Brand & Operational Metrics */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--bg-elevated)] p-7">
-              {/* Portrait Photo */}
-              <div className="relative aspect-square w-full rounded-[var(--radius-sm)] overflow-hidden border border-[var(--border)] bg-[var(--bg)] flex items-end justify-center mb-6">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--accent)_0%,_transparent_75%)] opacity-15" />
-                <Image
-                  src="/chirag-portrait.png"
-                  alt={siteConfig.name}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 400px"
-                  className="object-contain object-bottom relative z-10"
-                />
+            <div className="rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--bg-elevated)] p-7 shadow-xs">
+              {/* Studio Emblem Visual Card */}
+              <div className="relative aspect-square w-full rounded-[var(--radius-sm)] overflow-hidden border border-[var(--border)] bg-[var(--bg)] flex flex-col items-center justify-center p-8 mb-6 group">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--accent)_0%,_transparent_70%)] opacity-15 group-hover:opacity-25 transition-opacity duration-500" />
+                
+                <div className="relative w-44 h-36 flex items-center justify-center z-10">
+                  <Image
+                    src="/logo-dark.png"
+                    alt="White Owl Labs"
+                    fill
+                    className="hidden dark:block object-contain"
+                  />
+                  <Image
+                    src="/logo-light.png"
+                    alt="White Owl Labs"
+                    fill
+                    className="block dark:hidden object-contain"
+                  />
+                </div>
+
+                <div className="mt-4 px-3 py-1 rounded-full bg-[var(--bg-elevated)] border border-[var(--border)] text-[11px] font-mono text-[var(--accent)] flex items-center gap-1.5 z-10">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                  <span>Software & AI Engineering Studio</span>
+                </div>
               </div>
 
-              {/* Quick Availability / Location Badges */}
-              <div className="space-y-3 pt-2">
+              {/* Operational & SLA Badges */}
+              <div className="space-y-3 pt-1">
                 {aboutData.quickStats.map((stat) => (
                   <div
                     key={stat.label}
                     className="flex items-center justify-between text-xs py-2 border-b border-[var(--border)]/60 last:border-0"
                   >
                     <span className="text-[var(--fg-muted)]">{stat.label}</span>
-                    <span className="font-medium text-[var(--fg)]">{stat.value}</span>
+                    <span className="font-semibold text-[var(--fg)]">{stat.value}</span>
                   </div>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Right Column: Bio & Working Principles */}
+          {/* Right Column: Studio Story & Engineering Principles */}
           <div className="lg:col-span-7 space-y-8">
             <div>
               <span className="text-xs font-semibold uppercase tracking-wider text-[var(--accent)] mb-2 block">
-                About Chirag
+                About White Owl Labs
               </span>
               <Heading as="h2" size="h2" className="mb-6">
-                Engineering with business perspective.
+                Engineering with technical rigor and business perspective.
               </Heading>
 
               <div className="space-y-4 text-[var(--fg-muted)] text-body leading-relaxed">

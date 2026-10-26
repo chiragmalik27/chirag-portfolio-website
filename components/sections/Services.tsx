@@ -16,10 +16,10 @@ export function Services() {
             Services & Expertise
           </span>
           <Heading as="h2" size="h2" className="mb-4">
-            How I help your business grow and scale.
+            How we engineer, launch, and scale your systems.
           </Heading>
           <p className="text-[var(--fg-muted)] text-body-lg">
-            Direct, senior-level engineering focused on measurable speed, conversion lift, and intelligent automation.
+            Senior-level engineering focused on high-throughput architecture, sub-second latency, and intelligent automation.
           </p>
         </div>
 

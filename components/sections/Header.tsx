@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -58,13 +59,27 @@ export function Header() {
     >
       <Container>
         <div className="flex h-16 md:h-20 items-center justify-between">
-          {/* Logo / Name */}
+          {/* Logo / Brand */}
           <Link
             href="/"
-            className="flex items-center gap-2 font-display font-bold text-lg tracking-tight text-[var(--fg)] hover:text-[var(--accent)] transition-colors focus-visible:outline-2 focus-visible:outline-[var(--accent)] rounded-sm"
+            className="flex items-center gap-3 group focus-visible:outline-2 focus-visible:outline-[var(--accent)] rounded-sm"
           >
-            <span className="w-2.5 h-2.5 rounded-full bg-[var(--accent)] inline-block" />
-            <span>{siteConfig.name}</span>
+            <div className="relative h-8 md:h-9 w-36 md:w-44 flex items-center">
+              <Image
+                src="/logo-horizontal-dark.png"
+                alt="White Owl Labs"
+                fill
+                priority
+                className="hidden dark:block object-contain object-left"
+              />
+              <Image
+                src="/logo-horizontal-light.png"
+                alt="White Owl Labs"
+                fill
+                priority
+                className="block dark:hidden object-contain object-left"
+              />
+            </div>
           </Link>
 
           {/* Desktop Nav */}

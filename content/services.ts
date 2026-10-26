@@ -15,39 +15,42 @@ export interface ProcessStep {
 
 export const services: Service[] = [
   {
-    id: "custom-web-apps",
-    title: "High-Speed Websites & Web Apps",
-    tagline: "Websites that load under 1 second and convert visitors into paying clients.",
-    description:
-      "I design and build tailored web applications with clean code, responsive layouts, and zero bloat. Every page is built to look incredible and turn casual visitors into inbound leads.",
-    deliverables: [
-      "Sub-second load times & 95+ Google Lighthouse scores",
-      "Seamless mobile responsiveness across all devices",
-      "Clean content architecture your team can maintain"
-    ]
-  },
-  {
     id: "ai-rag-solutions",
-    title: "AI Solutions & Custom RAG Systems",
-    tagline: "Grounded AI search assistants connected directly to your company's data.",
+    title: "Enterprise AI & Autonomous RAG Systems",
+    tagline: "Grounded semantic search, custom vector pipelines, and autonomous agent systems.",
     description:
-      "Cut down repetitive internal research and customer support workloads. I build custom Retrieval-Augmented Generation (RAG) assistants that answer questions accurately with exact document citations.",
+      "We design and deploy production-grade AI systems connected directly to your enterprise knowledge base. From low-latency vector retrieval to autonomous multi-agent workflows, we eliminate hallucinations and streamline complex operations.",
     deliverables: [
-      "Custom knowledge search across PDFs, docs & databases",
-      "Zero-hallucination pipelines with source citations",
-      "Secure, private enterprise-grade integrations"
+      "Custom RAG search across structured databases, docs & APIs",
+      "Sub-150ms hybrid vector search (Pinecone, Qdrant, pgvector)",
+      "Multi-agent autonomous workflows with deterministic tool calling",
+      "Enterprise security, RBAC permissions & data compliance"
     ]
   },
   {
-    id: "revamp-optimization",
-    title: "Performance & Conversion Optimization",
-    tagline: "Revitalize outdated, slow, or low-converting digital touchpoints.",
+    id: "custom-web-apps",
+    title: "Full-Stack Web & Next.js Platforms",
+    tagline: "Ultra-fast, responsive web applications engineered for scalability and conversion.",
     description:
-      "Is your current website clunky or leaking sales? I audit, refactor, and modernize your digital presence to dramatically elevate speed, aesthetic trust, and conversion rates.",
+      "We build mission-critical web applications with clean Next.js App Router architecture, TypeScript, and modern design systems. Every application is optimized for sub-second page loads, SEO dominance, and effortless user journeys.",
     deliverables: [
-      "Full performance & accessibility audit",
-      "Core Web Vitals & mobile UX overhaul",
-      "Modern design upgrade with seamless brand alignment"
+      "Sub-second load times & 99+ Google Lighthouse scores",
+      "Fluid, responsive UI with accessible design system components",
+      "Serverless Edge computing & global CDN caching",
+      "Scalable database modeling (PostgreSQL, MongoDB, Redis)"
+    ]
+  },
+  {
+    id: "cloud-architecture",
+    title: "High-Throughput Backends & Cloud APIs",
+    tagline: "Resilient microservices, streaming endpoints, and high-concurrency infrastructure.",
+    description:
+      "Whether powering real-time chat, transactional fintech, or high-volume data streams, we build resilient backends that scale without downtime. Our systems handle high concurrency with predictable latency.",
+    deliverables: [
+      "High-throughput RESTful & GraphQL microservices",
+      "Real-time event streaming & WebSocket pub/sub architecture",
+      "Zero-downtime CI/CD deployment pipelines (AWS, Vercel, GCP)",
+      "Comprehensive end-to-end telemetry, logging & monitoring"
     ]
   }
 ];
@@ -55,23 +58,23 @@ export const services: Service[] = [
 export const processSteps: ProcessStep[] = [
   {
     step: 1,
-    title: "Discovery & Scope",
+    title: "Technical Discovery & Architecture",
     duration: "Week 1",
     description:
-      "We clarify your business goals, target clients, and key metrics. No jargon — just clear deliverables, exact timelines, and fixed scope."
+      "We analyze your product vision, system requirements, and scalability targets. We deliver an exact technical blueprint, database schema, and fixed-schedule milestone plan."
   },
   {
     step: 2,
-    title: "Architecture & Iterative Build",
+    title: "Agile Sprints & Staging Previews",
     duration: "Weeks 2-4",
     description:
-      "I build your application in transparent, bite-sized stages with live staging links, incorporating your direct feedback at each checkpoint."
+      "We build your software in transparent bi-weekly sprints. Your team receives working staging links, code reviews, and asynchronous updates at every step."
   },
   {
     step: 3,
-    title: "Testing, Launch & Handover",
+    title: "Security Hardening & Production Launch",
     duration: "Week 5",
     description:
-      "Rigorous cross-device testing, SEO optimization, and live deployment with a walkthrough video and complete documentation."
+      "Rigorous end-to-end testing, Core Web Vitals audit, and seamless cloud deployment with comprehensive documentation and engineering handover."
   }
 ];

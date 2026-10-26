@@ -21,32 +21,47 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} | ${siteConfig.role}`,
-  description: `${siteConfig.positioning} Specializing in high-performance web development and AI solutions.`,
-  authors: [{ name: siteConfig.name }],
+  description: `${siteConfig.positioning} Specializing in high-performance web platforms and autonomous AI systems.`,
+  authors: [{ name: siteConfig.name, url: "https://whiteowllabs.in" }],
   keywords: [
-    "Full-Stack Developer",
-    "Web Developer",
-    "AI Solutions",
-    "RAG Models",
-    "Next.js Developer",
-    "Chirag Malik",
+    "White Owl Labs",
+    "Software Engineering Studio",
+    "Enterprise AI Solutions",
+    "Autonomous Agents",
+    "RAG Systems",
+    "Next.js Development Studio",
+    "Web Performance Optimization"
   ],
-  metadataBase: new URL("https://chiragmalik.com"),
+  metadataBase: new URL("https://whiteowllabs.in"),
   alternates: {
     canonical: "/",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://chiragmalik.com",
+    url: "https://whiteowllabs.in",
     title: `${siteConfig.name} | ${siteConfig.role}`,
     description: siteConfig.positioning,
     siteName: siteConfig.name,
+    images: [
+      {
+        url: "/logo-dark.png",
+        width: 1200,
+        height: 630,
+        alt: "White Owl Labs - Software & AI Engineering Studio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} | ${siteConfig.role}`,
     description: siteConfig.positioning,
+    images: ["/logo-dark.png"],
   },
 };
 
@@ -79,22 +94,31 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Person",
+              "@type": "Organization",
               name: siteConfig.name,
-              jobTitle: siteConfig.role,
+              url: "https://whiteowllabs.in",
+              logo: "https://whiteowllabs.in/logo-dark.png",
               description: siteConfig.positioning,
-              url: "https://chiragmalik.com",
+              email: siteConfig.contact.email,
+              telephone: siteConfig.contact.phone,
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: siteConfig.contact.phone,
+                contactType: "Customer Support",
+                email: siteConfig.contact.email,
+                availableLanguage: ["English", "Hindi"],
+              },
               sameAs: [
-                siteConfig.contact.linkedin,
                 siteConfig.contact.github,
               ],
               knowsAbout: [
-                "Full-Stack Development",
-                "Next.js",
+                "Full-Stack Web Development",
+                "Next.js App Router",
                 "TypeScript",
                 "Artificial Intelligence",
-                "RAG Models",
-                "Web Performance Optimization"
+                "Enterprise RAG Models",
+                "Autonomous Agents",
+                "Cloud Distributed Systems"
               ],
             }),
           }}

@@ -186,7 +186,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                 02 / Architectural Decisions
               </span>
               <Heading as="h2" size="h2" className="mb-4">
-                My Approach
+                Our Engineering Approach
               </Heading>
               <div className="space-y-4">
                 {project.approach.map((step, idx) => (
@@ -305,7 +305,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                   Let&apos;s evaluate your current architecture and outline an execution plan.
                 </p>
                 <Button href="/#contact" className="w-full">
-                  Book a discovery call
+                  Schedule Technical Discovery
                 </Button>
               </div>
             </div>

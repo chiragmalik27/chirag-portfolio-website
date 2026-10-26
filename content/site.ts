@@ -1,5 +1,6 @@
 export interface SiteConfig {
   name: string;
+  tagline: string;
   role: string;
   positioning: string;
   targetClients: string;
@@ -13,9 +14,10 @@ export interface SiteConfig {
   };
   contact: {
     email: string;
+    phone: string;
+    phoneUrl: string;
     whatsapp: string;
     whatsappUrl: string;
-    linkedin: string;
     github: string;
   };
   navLinks: Array<{
@@ -25,24 +27,28 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Chirag Malik",
-  role: "Full-stack developer / AI Solutions Engineer / RAG Models",
-  positioning: "I build fast, clean websites for Business owners.",
-  targetClients: "Startups, agencies, local businesses, international freelance clients",
+  name: "White Owl Labs",
+  tagline: "Software & AI Engineering Studio",
+  role: "Software & AI Engineering Studio",
+  positioning:
+    "We architect mission-critical software, autonomous AI systems, and high-performance web applications for ambitious companies.",
+  targetClients:
+    "High-growth startups, scaleups, enterprise teams, and digital-first businesses",
   primaryCta: {
-    label: "Book a call",
+    label: "Start a Project",
     href: "#contact",
   },
   secondaryCta: {
-    label: "View work",
+    label: "Explore Work",
     href: "#work",
   },
   contact: {
-    email: "chiragmalik0505@gmail.com",
-    whatsapp: "+919501480672",
-    whatsappUrl: "https://wa.me/919501480672",
-    linkedin: "https://www.linkedin.com/in/chirag-malik-a9a859265/",
-    github: "https://github.com/chiragmalik27",
+    email: "hey@whiteowllabs.in",
+    phone: "+91 7877832579",
+    phoneUrl: "tel:+917877832579",
+    whatsapp: "+917877832579",
+    whatsappUrl: "https://wa.me/917877832579",
+    github: "https://github.com/whiteowllabs",
   },
   navLinks: [
     { label: "Work", href: "#work" },

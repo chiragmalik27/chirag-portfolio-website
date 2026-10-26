@@ -30,7 +30,7 @@ export const projects: Project[] = [
     category: "AI & Full-Stack Platform",
     client: "EduRumble",
     timeline: "Live Production App",
-    role: "Full-Stack & AI Engineer",
+    role: "White Owl Labs (Product Engineering & Architecture)",
     stack: ["Next.js App Router", "TypeScript", "Tailwind CSS", "OpenAI API", "Vector Embeddings", "PostgreSQL"],
     featured: true,
     image: "/projects/edurumble.jpg",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
       { label: "Completion Rate", value: "94%" },
       { label: "Subject Coverage", value: "Unlimited" }
     ],
-    githubUrl: "https://github.com/chiragmalik27",
+    githubUrl: "https://github.com/whiteowllabs",
     liveUrl: "https://edurumble.com/"
   },
   {
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     category: "Full-Stack Web App",
     client: "MysteryMessage.tech",
     timeline: "Live Web App",
-    role: "Full-Stack Web Developer",
+    role: "White Owl Labs (Full-Stack Engineering)",
     stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MongoDB", "Framer Motion", "Edge API"],
     featured: true,
     image: "/projects/mystrymessage.jpg",
@@ -82,7 +82,7 @@ export const projects: Project[] = [
       { label: "Dispatch Speed", value: "< 350ms" },
       { label: "Privacy Protection", value: "100%" }
     ],
-    githubUrl: "https://github.com/chiragmalik27",
+    githubUrl: "https://github.com/whiteowllabs",
     liveUrl: "https://mystrymessage.tech"
   },
   {
@@ -92,9 +92,10 @@ export const projects: Project[] = [
     category: "Enterprise AI & RAG",
     client: "Fintech & Compliance Advisory",
     timeline: "Enterprise Engagement",
-    role: "Lead AI Engineer",
+    role: "White Owl Labs (AI Systems Architecture)",
     stack: ["Next.js 15", "TypeScript", "Python", "FastAPI", "Pinecone", "LangChain", "OpenAI"],
     featured: true,
+    image: "/projects/nexus-rag.jpg",
     bentoSpan: "md:col-span-12 lg:col-span-6",
     problem:
       "Enterprise analysts spent an average of 45 minutes searching scattered PDFs, policy guidelines, and internal reports to answer customer regulatory questions.",
@@ -112,8 +113,8 @@ export const projects: Project[] = [
       { label: "Research time saved", value: "78%" },
       { label: "Document volume", value: "50k+" }
     ],
-    githubUrl: "https://github.com/chiragmalik27",
-    liveUrl: "https://github.com/chiragmalik27"
+    githubUrl: "https://github.com/whiteowllabs",
+    liveUrl: "https://github.com/whiteowllabs"
   },
   {
     slug: "apex-commerce-platform",
@@ -122,9 +123,10 @@ export const projects: Project[] = [
     category: "Full-Stack E-Commerce",
     client: "D2C Brand",
     timeline: "Storefront Revamp",
-    role: "Full-Stack Web Architect",
+    role: "White Owl Labs (E-Commerce Web Architecture)",
     stack: ["Next.js App Router", "Tailwind CSS", "Shopify Storefront API", "TypeScript", "Redis"],
     featured: false,
+    image: "/projects/apex-commerce.jpg",
     bentoSpan: "md:col-span-12 lg:col-span-6",
     problem:
       "The client's previous monolithic storefront suffered from a 4.2s mobile load time, resulting in a high 64% bounce rate and abandoned carts.",
@@ -142,7 +144,7 @@ export const projects: Project[] = [
       { label: "Mobile conversion", value: "+34%" },
       { label: "Bounce rate drop", value: "-41%" }
     ],
-    githubUrl: "https://github.com/chiragmalik27",
-    liveUrl: "https://github.com/chiragmalik27"
+    githubUrl: "https://github.com/whiteowllabs",
+    liveUrl: "https://github.com/whiteowllabs"
   }
 ];

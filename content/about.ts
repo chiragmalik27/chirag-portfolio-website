@@ -12,27 +12,28 @@ export interface AboutData {
 
 export const aboutData: AboutData = {
   bioParagraphs: [
-    "I am a full-stack engineer and AI developer who bridges the gap between ambitious business ideas and polished, revenue-generating software.",
-    "Rather than treating code as an end in itself, I focus on the client's bottom line: how quickly does the page load, how clear is the value proposition, and how frictionless is the journey from visitor to customer.",
-    "Whether you need an enterprise AI search assistant powered by custom RAG pipelines or a high-converting web storefront, I bring technical rigor and clear, jargon-free communication to every milestone."
+    "White Owl Labs is a multidisciplinary software and AI engineering studio. We partner with visionary founders, venture-backed startups, and enterprise teams to turn complex technical challenges into robust, production-ready software.",
+    "Our studio combines deep expertise across distributed cloud architecture, autonomous AI agents, enterprise Retrieval-Augmented Generation (RAG), and high-conversion web engineering. We reject bureaucratic agency overhead in favor of agile, transparent, and battle-tested execution.",
+    "From initial system design to live global deployment, we build high-speed systems engineered for resilience, sub-second latency, and measurable business impact."
   ],
   principles: [
     {
-      title: "Speed as a Feature",
-      description: "Fast applications retain attention, rank higher on Google, and convert more visitors. Sub-second loads are non-negotiable."
+      title: "Sub-Second Performance",
+      description: "Fast software drives revenue and conversion. We architect every system with sub-second response times, zero unnecessary bloat, and 99+ Core Web Vitals."
     },
     {
-      title: "Transparent Collaboration",
-      description: "Direct access, asynchronous updates, and working preview links. No disappearing acts or unexpected invoices."
+      title: "Production-Grade AI",
+      description: "We don't build brittle prototypes. We design grounded, citation-verified AI systems and autonomous agent pipelines ready for mission-critical production."
     },
     {
-      title: "Real Business Outcomes",
-      description: "Code exists to solve problems. Every technical choice is measured against its business impact."
+      title: "Direct Engineering Access",
+      description: "Direct collaboration with senior engineers, rapid milestone cycles, and live staging previews. Total transparency from kickoff to handover."
     }
   ],
   quickStats: [
-    { label: "Core Focus", value: "Next.js & AI/RAG" },
-    { label: "Primary Timezone", value: "IST (UTC+5:30) / Global Overlap" },
-    { label: "Availability", value: "Open for Q1/Q2 Engagements" }
+    { label: "Studio Focus", value: "Enterprise AI & Scalable Web" },
+    { label: "Headquarters", value: "India · Serving Global Clients" },
+    { label: "Delivery Model", value: "Fixed-Scope & Dedicated Sprints" },
+    { label: "Engineering SLA", value: "99.9% Uptime Guarantee" }
   ]
 };
