@@ -3,14 +3,16 @@
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *, .dark, .dark *));
 
 @layer base {
-  /* Light theme as default (white mode) */
+  /* Light theme matching reference editorial aesthetic */
   :root {
-    --bg: #F7F8FA;
+    --bg: #F9F9F8;
     --bg-elevated: #FFFFFF;
-    --fg: #0D1117;
-    --fg-muted: #5C6370;
-    --border: #DDE1E9;
-    --accent: #0AAFFF;
+    --fg: #1A1A1A;
+    --fg-muted: #5C554D;
+    --border: #DCD3C6;
+    --accent: #2D4A3E;
+    --accent-bronze: #8B7355;
+    --accent-sage: #6B9A82;
     --accent-fg: #FFFFFF;
     --success: #10B981;
     --danger: #EF4444;
@@ -18,19 +20,22 @@
     --radius-sm: 0.375rem;
     --radius-md: 0.75rem;
     --radius-lg: 1rem;
+    --radius-2xl: 1.5rem;
     --radius-full: 9999px;
   }
 
   /* Dark theme overrides */
   :root[data-theme="dark"],
   :root.dark {
-    --bg: #0E1117;
-    --bg-elevated: #161B27;
-    --fg: #E8ECF0;
-    --fg-muted: #7B8794;
+    --bg: #090C10;
+    --bg-elevated: #121721;
+    --fg: #F3F4F6;
+    --fg-muted: #9CA3AF;
     --border: #232B3B;
-    --accent: #0AAFFF;
-    --accent-fg: #FFFFFF;
+    --accent: #38BDF8;
+    --accent-bronze: #D4B996;
+    --accent-sage: #7DD3FC;
+    --accent-fg: #090C10;
     --success: #10B981;
     --danger: #EF4444;
   }
@@ -66,16 +71,20 @@ html.light .light-logo,
   --color-fg-muted: var(--fg-muted);
   --color-border: var(--border);
   --color-accent: var(--accent);
+  --color-accent-bronze: var(--accent-bronze);
+  --color-accent-sage: var(--accent-sage);
   --color-accent-fg: var(--accent-fg);
   --color-success: var(--success);
   --color-danger: var(--danger);
 
   --font-display: var(--font-dm-sans), system-ui, sans-serif;
+  --font-serif: var(--font-serif), Georgia, Cambria, "Times New Roman", Times, serif;
   --font-sans: var(--font-inter), system-ui, sans-serif;
 
   --radius-sm: var(--radius-sm);
   --radius-md: var(--radius-md);
   --radius-lg: var(--radius-lg);
+  --radius-2xl: var(--radius-2xl);
   --radius-full: var(--radius-full);
 }
 

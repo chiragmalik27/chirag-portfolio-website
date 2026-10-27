@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { DM_Sans, Inter } from "next/font/google";
+import { DM_Sans, Inter, Playfair_Display } from "next/font/google";
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
 import { siteConfig } from "@/content/site";
@@ -16,6 +16,13 @@ const dmSans = DM_Sans({
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -84,7 +91,7 @@ export default function RootLayout({
       lang="en"
       data-theme="light"
       suppressHydrationWarning
-      className={`${dmSans.variable} ${inter.variable} light h-full antialiased`}
+      className={`${dmSans.variable} ${inter.variable} ${playfair.variable} light h-full antialiased`}
     >
       <head>
         <Script

@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { Mail, MessageSquare, Phone, Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import { Heading } from "@/components/ui/Heading";
 import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/content/site";
 import { contactFormSchema, type ContactFormData } from "@/lib/validators";
@@ -87,20 +86,23 @@ export function Contact() {
   };
 
   return (
-    <Section id="contact" className="border-t border-[var(--border)]">
+    <Section id="contact" className="py-24 sm:py-32 bg-[var(--bg-elevated)] border-t border-[var(--border)] overflow-hidden">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           {/* Left Column: Direct Inbound Channels */}
           <div className="lg:col-span-5 space-y-6">
             <div>
-              <span className="text-xs font-semibold uppercase tracking-wider text-[var(--accent)] mb-2 block">
+              <p className="text-xs font-mono font-bold uppercase tracking-[0.3em] text-[#8B7355] dark:text-[#D4B996] mb-3 block">
                 Get in Touch
-              </span>
-              <Heading as="h2" size="h2" className="mb-4">
-                Partner with White Owl Labs.
-              </Heading>
-              <p className="text-[var(--fg-muted)] text-body leading-relaxed mb-8">
-                Share details about your product vision, architecture requirements, or timeline. Our engineering leads review and respond to every inquiry within 24 hours.
+              </p>
+              <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-[var(--fg)] leading-[1.1] mb-5">
+                Partner with{" "}
+                <span className="font-serif italic font-semibold text-[var(--accent)] dark:text-[#38BDF8]">
+                  White Owl Labs.
+                </span>
+              </h2>
+              <p className="text-[var(--fg-muted)] text-base leading-relaxed mb-8">
+                Share details about your product vision, system architecture requirements, or target timeline. Our engineering leads review and respond to every inquiry within 24 hours.
               </p>
             </div>
 
@@ -167,7 +169,7 @@ export function Contact() {
 
           {/* Right Column: Inbound Contact Form */}
           <div className="lg:col-span-7">
-            <div className="rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--bg-elevated)] p-7 md:p-10">
+            <div className="rounded-3xl border border-[var(--border)] bg-[var(--bg)] p-7 sm:p-10 shadow-md">
               {status === "success" ? (
                 <div
                   role="status"

@@ -1,8 +1,10 @@
 export interface Service {
   id: string;
+  number: string;
   title: string;
   tagline: string;
   description: string;
+  image: string;
   deliverables: string[];
 }
 
@@ -15,42 +17,63 @@ export interface ProcessStep {
 
 export const services: Service[] = [
   {
-    id: "ai-rag-solutions",
-    title: "Enterprise AI & Autonomous RAG Systems",
-    tagline: "Grounded semantic search, custom vector pipelines, and autonomous agent systems.",
+    id: "enterprise-platforms",
+    number: "01",
+    title: "Enterprise Platforms",
+    tagline: "Scalable web applications engineered for mission-critical operations and conversion.",
     description:
-      "We design and deploy production-grade AI systems connected directly to your enterprise knowledge base. From low-latency vector retrieval to autonomous multi-agent workflows, we eliminate hallucinations and streamline complex operations.",
+      "We architect scalable, high-performance web applications tailored to complex business requirements. Built with Next.js App Router, TypeScript, and modern design systems for sub-second load times.",
+    image: "/service-1.png",
     deliverables: [
-      "Custom RAG search across structured databases, docs & APIs",
+      "Next.js App Router & Serverless Edge architecture",
+      "Sub-second page loads & 99+ Lighthouse performance",
+      "Robust relational & document database modeling",
+      "Enterprise security, RBAC & SOC-2 compliance readiness"
+    ]
+  },
+  {
+    id: "native-mobile-apps",
+    number: "02",
+    title: "Native Mobile Apps",
+    tagline: "Fluid, high-performance iOS and Android experiences with native responsiveness.",
+    description:
+      "Delivering premium mobile experiences for iOS and Android with fluid UI animations, offline-first architectures, and robust cloud integrations tailored for enterprise reliability.",
+    image: "/service-2.png",
+    deliverables: [
+      "Cross-platform React Native & Flutter engineering",
+      "60fps fluid micro-interactions & gestures",
+      "Secure biometric authentication & local cache storage",
+      "App Store & Google Play automated CI/CD pipelines"
+    ]
+  },
+  {
+    id: "saas-engineering",
+    number: "03",
+    title: "SaaS Engineering & AI Agents",
+    tagline: "Autonomous multi-agent workflows, vector retrieval, and scalable revenue platforms.",
+    description:
+      "End-to-end product development helping founders take scalable revenue models from zero to one. We integrate autonomous AI workflows, vector search pipelines, and seamless subscription billing.",
+    image: "/service-3.png",
+    deliverables: [
+      "Custom RAG search across documents, databases & APIs",
+      "Autonomous agent workflows with deterministic tool calling",
+      "Stripe Billing, usage-based metering & customer portals",
+      "Multi-tenant isolation & distributed cloud hosting"
+    ]
+  },
+  {
+    id: "cloud-ai-integration",
+    number: "04",
+    title: "Cloud & AI Integration",
+    tagline: "Modernizing legacy systems and integrating cutting-edge AI workflows.",
+    description:
+      "Modernizing legacy systems and integrating cutting-edge AI workflows to future-proof your infrastructure. We construct low-latency inference pipelines, streaming APIs, and microservices.",
+    image: "/service-4.png",
+    deliverables: [
       "Sub-150ms hybrid vector search (Pinecone, Qdrant, pgvector)",
-      "Multi-agent autonomous workflows with deterministic tool calling",
-      "Enterprise security, RBAC permissions & data compliance"
-    ]
-  },
-  {
-    id: "custom-web-apps",
-    title: "Full-Stack Web & Next.js Platforms",
-    tagline: "Ultra-fast, responsive web applications engineered for scalability and conversion.",
-    description:
-      "We build mission-critical web applications with clean Next.js App Router architecture, TypeScript, and modern design systems. Every application is optimized for sub-second page loads, SEO dominance, and effortless user journeys.",
-    deliverables: [
-      "Sub-second load times & 99+ Google Lighthouse scores",
-      "Fluid, responsive UI with accessible design system components",
-      "Serverless Edge computing & global CDN caching",
-      "Scalable database modeling (PostgreSQL, MongoDB, Redis)"
-    ]
-  },
-  {
-    id: "cloud-architecture",
-    title: "High-Throughput Backends & Cloud APIs",
-    tagline: "Resilient microservices, streaming endpoints, and high-concurrency infrastructure.",
-    description:
-      "Whether powering real-time chat, transactional fintech, or high-volume data streams, we build resilient backends that scale without downtime. Our systems handle high concurrency with predictable latency.",
-    deliverables: [
       "High-throughput RESTful & GraphQL microservices",
-      "Real-time event streaming & WebSocket pub/sub architecture",
-      "Zero-downtime CI/CD deployment pipelines (AWS, Vercel, GCP)",
-      "Comprehensive end-to-end telemetry, logging & monitoring"
+      "Real-time event streaming & WebSocket pub/sub infrastructure",
+      "Zero-downtime CI/CD deployment pipelines (AWS, Vercel, GCP)"
     ]
   }
 ];
