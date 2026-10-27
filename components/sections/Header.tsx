@@ -47,13 +47,18 @@ export function Header() {
 
   return (
     <>
-      {/* Floating Island Pill Navbar matching reference site */}
+      {/* Floating Island Pill Glass Navbar */}
       <header
         className={cn(
           "fixed top-4 sm:top-6 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-7xl transition-all duration-300",
           "rounded-full px-4 sm:px-7 py-2.5 sm:py-3 flex items-center justify-between",
-          "bg-white/80 dark:bg-[#10141D]/80 backdrop-blur-xl border border-[#DCD3C6]/80 dark:border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.08)]",
-          isScrolled && "shadow-[0_12px_40px_0_rgba(0,0,0,0.12)] border-[#C4B7A5]/80 dark:border-white/20"
+          // Frosted Glass Effect
+          "bg-white/35 dark:bg-[#0a0d14]/40 backdrop-blur-xl backdrop-saturate-150",
+          "border border-white/70 dark:border-white/15",
+          "shadow-[0_8px_32px_0_rgba(0,0,0,0.08),inset_0_1px_1px_0_rgba(255,255,255,0.85),inset_0_-1px_1px_0_rgba(0,0,0,0.03)]",
+          "dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.4),inset_0_1px_1px_0_rgba(255,255,255,0.12)]",
+          isScrolled &&
+            "bg-white/50 dark:bg-[#0a0d14]/65 border-white/90 dark:border-white/20 shadow-[0_12px_40px_0_rgba(0,0,0,0.12),inset_0_1px_1px_0_rgba(255,255,255,0.95)]"
         )}
       >
         {/* Logo / Brand */}

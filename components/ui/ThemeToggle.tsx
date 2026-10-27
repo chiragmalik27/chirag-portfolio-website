@@ -59,7 +59,7 @@ export function ThemeToggle({ className }: { className?: string }) {
       onClick={toggleTheme}
       aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
       className={cn(
-        "inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-full border border-[var(--border)] bg-[var(--bg-elevated)] text-[var(--fg)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors focus-visible:outline-2 focus-visible:outline-[var(--accent)] cursor-pointer",
+        "inline-flex items-center justify-center w-10 h-10 rounded-full border border-white/70 dark:border-white/15 bg-white/40 dark:bg-white/5 text-[var(--fg)] hover:text-[var(--accent)] dark:hover:text-white hover:bg-white/70 dark:hover:bg-white/15 transition-all shadow-[0_2px_8px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,0.8)] dark:shadow-[0_2px_8px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.1)] focus-visible:outline-2 focus-visible:outline-[var(--accent)] cursor-pointer backdrop-blur-md",
         className
       )}
     >
